@@ -19,7 +19,11 @@ INSERT INTO creature_template_addon (entry, path_id, mount, bytes1, bytes2, emot
 (64263, 0, 0, 0, 1, 0, '99203');
 
 -- Gao-Ran Blackguard (Creature Equipment Template)
-DELETE FROM creature_equip_template WHERE entry = 61017;
+DELETE FROM creature_equip_template WHERE entry IN (61017,61082,61083);
 INSERT INTO creature_equip_template (entry, id, itementry1, itementry2, itementry3) VALUES
+(61017, 1, 80123, 0, 0), -- 61017
 (61017, 2, 12937, 0, 0), -- 61017
-(61017, 1, 80123, 0, 0); -- 61017
+(61082, 1, 80123, 0, 0), -- 61082
+(61082, 2, 29648, 0, 0), -- 61082
+(61082, 3, 14878, 0, 0), -- 61082
+(61083, 1, 80283, 77414, 0); -- 61083
